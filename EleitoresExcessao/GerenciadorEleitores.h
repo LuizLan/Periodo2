@@ -14,13 +14,13 @@ public:
 
     void cadastrarEleitor(string N, int I, int T, int P);
     void verificaEleitor(int P);
-    
+
 private:
 
     Eleitor eleitores[100];
 
     void verificaMenoridade(int P);
-    void verificaMaioridade(int P);
+    void verificaPendenciaIdade(int P);
 
 };
 

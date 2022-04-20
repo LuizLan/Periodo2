@@ -1,7 +1,9 @@
 #ifndef ELEITOR_H
 #define ELEITOR_H
+#include<iostream>
 #include<string>
 #include<exception>
+#include<stdexcept>
 
 using namespace std;
 
