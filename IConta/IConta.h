@@ -1,8 +1,8 @@
 #ifndef ICONTA_H
 #define ICONTA_H
 #include<vector>
-
-#pragma once
+#include<string>
+#include<iostream>
 
 using namespace std;
 
@@ -14,7 +14,7 @@ public:
 
     virtual void sacar(double V) = 0;
     virtual void depositar(double V) = 0;
-    virtual void saldoTotalDisponivel() = 0;
+    virtual double saldoTotalDisponivel() = 0;
 
 private:
 

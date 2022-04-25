@@ -3,7 +3,8 @@
         "stdlib.h": "c",
         "locale.h": "c",
         "iostream": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "vector": "cpp"
     },
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true
