@@ -1,16 +1,22 @@
-#ifndef ENDERECO_H
-#define ENDERECO_H
+#include<string>
 
 #pragma once
 
-class Endereco
-{
+using namespace std;
+
+class Endereco{
+
 public:
+
     Endereco();
+    Endereco(string R, string B, string C, string E, string CEP, int N);
     ~Endereco();
+
+    virtual string toString();
 
 private:
 
-};
+    string rua, bairro, cidade, estado, CEP;
+    int numero;
 
-#endif
+};
