@@ -162,8 +162,9 @@ int main(){
             auto *vet= new TrabalhadorPorHora(salarioHora);
             trabalhador.push_back(vet);
             trabalhador.at(i)->setNome(nome);
+            trabalhador.at(i)->calcularPagamentoSemanal(horaSemanal);
 
-            cout << trabalhador.at(i)->getNome() << " - " << "Semanal: R$ " << trabalhador.at(i)->calcularPagamentoSemanal(horaSemanal) << " - Mensal: R$ "<< trabalhador.at(i)->calcularPagamentoSemanal(horaSemanal)*4 << endl;
+            cout << trabalhador.at(i)->getNome() << " - " << "Semanal: R$ " << trabalhador.at(i)->calcularPagamentoSemanal(horaSemanal) << " - Mensal: R$ "<< trabalhador.at(i)->getSalario() << endl;
         }
     }
 
