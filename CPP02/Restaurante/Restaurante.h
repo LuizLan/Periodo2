@@ -12,5 +12,6 @@ public:
     MesaDeRestaurante getMesa(int Mesa);
 
 private:
-    MesaDeRestaurante mesas[30];
+    //MesaDeRestaurante mesas[30];
+    vector<MesaDeRestaurante> mesas = vector<MesaDeRestaurante>(30);
 };
