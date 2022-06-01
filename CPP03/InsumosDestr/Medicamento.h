@@ -6,11 +6,12 @@ class Medicamento:public Insumos{
 
 public:
     Medicamento();
-    Medicamento(string nome, string vencimento, string fabricante, float qntd, float valor, string Dose, string admin, string dispo);
+    Medicamento(string tipo, string nome, string vencimento, string fabricante, int qntd, float valor, string Dose, string admin, int dispo);
     ~Medicamento();
 
 protected:
-    string dosagem, administracao, disponibilizacao;
+    string dosagem, administracao;
+    int disponibilidade;
 
 
 private:

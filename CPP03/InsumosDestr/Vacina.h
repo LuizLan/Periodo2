@@ -6,7 +6,7 @@ class Vacina:public Insumos{
 
 public:
     Vacina();
-    Vacina(string nome, string vencimento, string fabricante, float qntd, float valor, string tipoV, int qntdDos, int intervalo);
+    Vacina(string tipo, string nome, string vencimento, string fabricante, int qntd, float valor, string tipoV, int qntdDos, int intervalo);
     ~Vacina();
 
 protected:

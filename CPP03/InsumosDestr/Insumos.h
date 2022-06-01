@@ -9,14 +9,14 @@ class Insumos{
 
 public:
     Insumos();
-    Insumos(string nome, string vencimento, string fabricante, float qntd, float valor);
+    Insumos(string tipoInsu, string nome, string vencimento, string fabricante, int qntd, float valor);
     virtual ~Insumos();
 
 protected:
-    string nome, vencimento, fabricante;
-    int tipoInsu;
-    float qntd, valor;
 
 private:
+    string nome, vencimento, fabricante, tipoInsu;
+    int qntd;
+    float valor;
 
 };

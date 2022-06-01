@@ -4,7 +4,8 @@ Insumos::Insumos(){
 
 }
 
-Insumos::Insumos(string N, string Ven, string F, float Q, float Val){
+Insumos::Insumos(string T,string N, string Ven, string F, int Q, float Val){
+    tipoInsu = T;
     nome = N;
     vencimento = Ven;
     fabricante = F;
@@ -13,5 +14,5 @@ Insumos::Insumos(string N, string Ven, string F, float Q, float Val){
 }
 
 Insumos::~Insumos(){
-
+    cout << "Deletando Insumos" << endl;
 }

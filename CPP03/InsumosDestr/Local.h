@@ -11,9 +11,13 @@ public:
     Local();
     ~Local();
 
+    void addInsumoArr(Insumos *In, int i);
+    void addInsumoVec(Insumos *In);
+
 protected:
-    Insumos insumosvec[3];
 
 private:
+    Insumos *insumosArr[10];
+    vector<Insumos*> insumosVec = vector<Insumos*>(10);
 
 };
