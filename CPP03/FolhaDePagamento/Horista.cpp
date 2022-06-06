@@ -3,16 +3,25 @@
 Horista::Horista(){
 
 }
-Horista::Horista(string nome, int matricula, double salarioHora, double horasTrab){
+Horista::Horista(string nome, int matricula, double hora, double htrab){
     setNome(nome);
     setMatricula(matricula);
-    this->salarioHora = salarioHora;
-    this->horasTrab = horasTrab;
+    salarioHora = hora;
+    horasTrab = htrab;
 }
 Horista::~Horista(){
 
 }
 
 double Horista::calculaSalario(){
-    return salarioHora*horasTrab;
+    double salario;
+
+    if (horasTrab > 40){
+        salario = salarioHora * 40;
+        salario += salarioHora * (horasTrab - 40) * 1.5;
+    }else{
+        salario = salarioHora * horasTrab ;
+    }
+
+    return salario*4;
 }
