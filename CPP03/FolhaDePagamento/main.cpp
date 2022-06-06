@@ -16,6 +16,8 @@ int main(){
     cin >> orcamento;
     cin.ignore();
 
+    gerenciador = SistemaGerenciarFolha(orcamento);
+
     getline(cin,nome);
     cin>>matricula;
     cin>>salario;
@@ -62,10 +64,10 @@ int main(){
     }
     
     try{
-        cout<< gerenciador.calculaValorTotalFolha()<<endl;
+        cout<<gerenciador.calculaValorTotalFolha()<<endl;
     }
     catch(string e){
-        std::cerr << e << endl;
+        cout << e << endl;
     }
 
     return 0;

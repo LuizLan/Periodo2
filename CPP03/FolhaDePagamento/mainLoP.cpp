@@ -262,7 +262,7 @@ double SistemaGerenciarFolha::calculaValorTotalFolha(){
     if (orcamento > totalFolha){
         return totalFolha;
     }else{
-        throw orcException.orcamentoEstourado() + to_string(getTotalFolha());
+        throw orcException.orcamentoEstourado() + to_string((int)getTotalFolha());
     }
     return 0;
 }
@@ -288,6 +288,8 @@ int main(){
 
     cin >> orcamento;
     cin.ignore();
+
+    gerenciador = SistemaGerenciarFolha(orcamento);
 
     getline(cin,nome);
     cin>>matricula;
@@ -335,10 +337,11 @@ int main(){
     }
     
     try{
-        cout<< gerenciador.calculaValorTotalFolha()<<endl;
-    }
-    catch(string e){
-        std::cerr << e << endl;
+
+        cout << gerenciador.calculaValorTotalFolha() << endl;
+
+    }catch(string e){
+        cout << e << endl;
     }
 
     return 0;

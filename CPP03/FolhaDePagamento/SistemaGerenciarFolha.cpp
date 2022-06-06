@@ -32,7 +32,7 @@ double SistemaGerenciarFolha::calculaValorTotalFolha(){
     if (orcamento > totalFolha){
         return totalFolha;
     }else{
-        throw orcException.orcamentoEstourado() + to_string(getTotalFolha());
+        throw orcException.orcamentoEstourado() + to_string((int)getTotalFolha());
     }
     return 0;
 }
