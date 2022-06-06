@@ -2,9 +2,77 @@
 #include<string>
 #include<fstream>
 #include<vector>
-#include"Pessoa.h"
 
 using namespace std;
+
+class Pessoa{
+
+public:
+    Pessoa();
+    Pessoa(int tipo, string nome, string telefone);
+    Pessoa(int tipo, string nome, string telefone, string cpf);
+    virtual ~Pessoa();
+
+    void setNome(string N);
+    void setTelefone(string T);
+    void setCpf(string C);
+    void setTipo(int T);
+
+    string getNome();
+    string getTelefone();
+    string getCpf();
+    int getTipo();
+
+protected:
+
+private:
+    int tipo;
+    string nome, telefone, cpf;
+};
+
+Pessoa::Pessoa(){
+
+}
+Pessoa::Pessoa(int tipo, string nome, string telefone){
+    this->tipo = tipo;
+    this->nome = nome;
+    this->telefone = telefone;
+}
+Pessoa::Pessoa(int tipo, string nome, string telefone, string cpf){
+    this->tipo = tipo;
+    this->nome= nome;
+    this->telefone = telefone;
+    this->cpf = cpf;
+}
+Pessoa::~Pessoa(){
+
+}
+
+void Pessoa::setNome(string N){
+    nome = N;
+}
+void Pessoa::setTelefone(string T){
+    telefone = T;
+}
+void Pessoa::setCpf(string C){
+    cpf = C;
+}
+void Pessoa::setTipo(int T){
+    tipo = T;
+}
+
+string Pessoa::getNome(){
+    return nome;
+}
+string Pessoa::getTelefone(){
+    return telefone;
+}
+string Pessoa::getCpf(){
+    return cpf;
+}
+int Pessoa::getTipo(){
+    return tipo;
+}
 
 void geraArquivo(string path, string data) {
     fstream fs;

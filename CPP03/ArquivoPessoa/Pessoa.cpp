@@ -17,3 +17,29 @@ Pessoa::Pessoa(int tipo, string nome, string telefone, string cpf){
 Pessoa::~Pessoa(){
 
 }
+
+void Pessoa::setNome(string N){
+    nome = N;
+}
+void Pessoa::setTelefone(string T){
+    telefone = T;
+}
+void Pessoa::setCpf(string C){
+    cpf = C;
+}
+void Pessoa::setTipo(int T){
+    tipo = T;
+}
+
+string Pessoa::getNome(){
+    return nome;
+}
+string Pessoa::getTelefone(){
+    return telefone;
+}
+string Pessoa::getCpf(){
+    return cpf;
+}
+int Pessoa::getTipo(){
+    return tipo;
+}

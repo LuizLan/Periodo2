@@ -6,7 +6,8 @@
         "xstring": "cpp",
         "vector": "cpp",
         "string": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "ostream": "cpp"
     },
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true
